@@ -49,7 +49,7 @@ Clone is basically downloading a repository(_the last version_) to your computer
 The difference between cloning and downloading is that **when Git clones a repository, it remembers where you downloaded it from.** We need this, because when we want to make a change, **Git remembers where to direct the change.**
 
 #### How to clone a Repository? 
-1. Go to **main page** de https://github.com/alexanderquispe/ECO224
+1. Go to **main page** de https://github.com/jesoto/1REI05
 2. Click on green buttom **Code**
 3. Click **Open with GitHub Desktop**
 4. You should select where to clone the repository. It is usually saved in the _My Documents_ folder. **NEVER SAVE IT IN A SHARED FOLDER LIKE DROPBOX OR GOOGLE DRIVE**
@@ -77,7 +77,7 @@ When you create a **Branche** this allows you **to create a copy of the code whe
 
 
 #### **Create a branche**:
-1. Go to a https://github.com/alexanderquispe/ECO224
+1. Go to a https://github.com/jesoto/1REI05
 click on the buttom **_main_**. 
 <img src="branche_master.png" alt="REPO" width="500" title = "REPO"/>
 
@@ -85,7 +85,7 @@ click on the buttom **_main_**.
 
 3. Now your branch should appear as _task_name_
 
-4. Go to https://github.com/alexanderquispe/ECO224/network to see if your branche has been created.
+4. Go to https://github.com/jesoto/1REI05/network to see if your branche has been created.
 
 
 ### <span style="color:blue">COMMIT</span>
@@ -101,7 +101,7 @@ Think of a **<span style="color:red">commit = snap shot</span>** of all files in
 #### Explore the **commits**
 When we commit we can explore how the repository was created and has been modified over time.
 We can see the list of **commits** similar to DropBox, but it is assumed that in **Git we only save significant changes.**
-https://github.com/alexanderquispe/ECO224/commits
+https://github.com/jesoto/1REI05/commits
 <img src="create_commit.png" alt="REPO" width="500" title = "REPO"/>
 
 
@@ -116,7 +116,7 @@ Usually there is always a person who is called the **REPO MAINTAINER**, who has 
 #### How to do a Pull Request
 <img src="pull_request.png" alt="REPO" width="500" title = "REPO"/>
 
-1. Go to https://github.com/alexanderquispe/ECO224/pull
+1. Go to https://github.com/jesoto/1REI05/pull
 2. Click on _New Pull Request_
 3. Select your branch
 4. Check if the modifications you are requesting for the master branche.
