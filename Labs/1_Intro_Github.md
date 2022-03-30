@@ -54,7 +54,7 @@ The difference between cloning and downloading is that **when Git clones a repos
 3. Click **Open with GitHub Desktop**
 4. You should select where to clone the repository. It is usually saved in the _My Documents_ folder. **NEVER SAVE IT IN A SHARED FOLDER LIKE DROPBOX OR GOOGLE DRIVE**
 
-<img src="repo_eco224.png" alt="REPO" width="750" title = "REPO"/>
+<img src="git.png" alt="REPO" width="750" title = "REPO"/>
 
 
 ### <span style="color:blue">BRANCH</span>
