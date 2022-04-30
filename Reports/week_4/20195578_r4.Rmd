@@ -1,0 +1,108 @@
+---
+title: "20195578_r4"
+author: "Jorge Sebastián Castro Schebesta"
+date: "29/4/2022"
+output: html_document
+---
+
+Student: Jorge Sebastián Castro Schebesta
+
+Code: 20195578
+
+What are the fundamental causes of the large differences in income per capita 
+across countries? Despite little consensus on the answer to this question, 
+there are studies that have focused on institutions and property rights, based
+on the hypothesis that countries with better "institutions", more secure 
+property rights and less distorting policies will invest more in physical and 
+human capital, and will use these factors more efficiently to achieve a higher 
+level of income.
+
+Based on graphs, tables and concrete sources, the article proposes the 
+existence of a high correlation between the mortality rates faced by soldiers, 
+bishops and sailors in European colonies and settlements; between the European 
+settlements and the first measures of the institutions; and between the first 
+institutions and the current ones. The sizable effects of institutions on per 
+capita income are then estimated using this source of variation. Furthermore, 
+it is argued that this relationship is not driven by outliers and is robust to 
+control for natural resources, soil quality, ethnolinguistic fragmentation, 
+among others. However, according to Albouy (2008), “36 of the 64 countries in 
+the sample are contradictorily assigned mortality rates from other countries. 
+Furthermore, given the limited data sources currently available, it seems 
+unlikely that a convincing set of settler mortality rates can be constructed” 
+(p.2). On the other hand, the article's findings do not imply that current 
+institutions are predetermined by colonial policies and cannot be changed. The 
+colonial experience represents only one of the many factors that affect 
+institutions.
+
+The contribution of the article consists of the impact of institutions on 
+economic performance, estimated by differences in the colonial experience as a 
+source of external variation. These differences are understood from three 
+premises. The first points out that Europeans adopted very different 
+colonization strategies, with different associated institutions. On the one 
+hand, countries like the United States, Australia, and New Zealand that 
+established institutions that enforced the rule of law and encouraged 
+investment. On the other hand, countries like the Congo or the Gold Coast 
+established extractive states with the intention of quickly transferring 
+resources to the metropolis. These institutions were detrimental to investment 
+and economic progress. The second alludes to the colonization strategy as one 
+that was determined to a certain extent by the viability of the European 
+settlement. In places where Europeans faced very high mortality rates, they 
+could not go to settle and were more likely to establish extractive states. 
+The third refers to these early institutions as those that persisted to the 
+present. Consequently, the determinants of whether Europeans might go and 
+settle in the colonies have an important effect on current institutions.
+
+Carl Sagan said that great claims require great evidence. This article shows 
+evidence to answer the research question. However, there is a host of unknowns 
+that the article does not address. For example, the results indicate that 
+reducing the risk of expropriation would generate significant gains in per 
+capita income, but do not indicate what concrete steps would be achieved. A 
+single study does not necessarily determine a finding. It would be helpful, 
+then, for future studies to further analyze the effect of more fundamental 
+institutions on property rights and the risk of expropriation.
+
+Bibliography:
+    
+Albouy, D. (2008, June). THE COLONIAL ORIGINS OF COMPARATIVE DEVELOPMENT: AN 
+INVESTIGATION OF THE SETTLER MORTALITY DATA. NBER WORKING PAPER SERIES. 
+https://www.nber.org/system/files/working_papers/w14130/w14130.pdf   
+
+
+
+```{r}
+library(readxl)
+data <- read_excel("peru_gdp_1922_2021.xlsx")
+View(data)  
+```
+
+```{r}
+data = na.omit(data) 
+```
+
+```{r}
+summary(data$...1)
+```
+
+```{r}
+summary(data$PM04862AA)
+```
+
+```{r}
+data$PM04862AA = as.numeric(data$PM04862AA)
+```
+
+```{r}
+summary(data$PM04862AA)
+```
+
+
+
+```{r}
+plot(data$...1, data$PM04862AA, xlab = "Year", ylab = "Real GDP per capita", pch = 19, xlim = c(1922, 2021), ylim = c(2775, 17015))
+abline(lm(data$PM04862AA~data$...1))
+```
+
+
+
+
+In this graph, it can be seen that the correlation between the year and the GDP per capita of the United States of America is moderate. However, the fact that both variables are correlated does not mean that one explains the other. In addition, the US economy (like that of other countries) is not static, but dynamic: on the one hand, the United States has been immersed in exponential economic growth, for example, thanks to its leadership in the rise of neoliberalism in the decade from 1990; but, on the other hand, it has suffered obvious falls such as the 1929 crisis, the world oil crisis, or due to the covid 19 pandemic. Despite this, the economy of this power has presented an undoubted development over time, since its GDP per capita went from 2,778,025 in 1922 to 16,687,726 dollars last year.
